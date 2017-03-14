@@ -11,9 +11,9 @@
       header{
         background-image: url(https://i.ytimg.com/vi/q7o7R5BgWDY/maxresdefault.jpg);
         background-size: cover;
-        padding: 5vh;
+        padding: 10vh;
         position: relative;
-        height: 90vh;
+        height: 80vh;
         color: white;
       }
       .contenedor{
@@ -21,10 +21,24 @@
         margin: auto;
       }
       .boton{
-        position: absolute;
+        position: relative;
+        left: 85vw;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0);
+        color: white;
+        font-family: inherit;
+        border: none;
+        transition: .5s;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 10px 15px;
       }
-      .titulo{
-        position: absolute;
+      .boton:hover{
+        transition: .4s;
+        background: white;
+        color: black;
+      }
+      .menu{
       }
     </style>
   </head>
@@ -32,8 +46,7 @@
     <div class="pagina">
       <header>
         <button class="boton ">
-          <img src="" alt="">
-          <span>MENU</span>
+          <span class="menu">MENU</span>
         </button>
         <div class="titulo">
           <span class="nombre">Daniel Vinet</span>
